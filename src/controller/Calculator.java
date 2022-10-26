@@ -1,4 +1,6 @@
-package model;
+package controller;
+
+import model.TaxBracket;
 
 import java.util.Scanner;
 

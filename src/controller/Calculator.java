@@ -26,7 +26,6 @@ public class Calculator {
         System.out.println("Tax Bracket: " + taxBracket.getTaxRate() + "%");
     }
 
-
     private static double calcAggregateDeductions(TaxBracket taxBracket) {
         double aggregateDeductions = 0;
         for (TaxBracket t : TAX_BRACKETS)
@@ -51,7 +50,7 @@ public class Calculator {
         }
     }
 
-
+    //Calculates weekly income after taxes based on user annual income
     private static void calcEarnings(double userIncome) {
         projectedEarnings = userIncome;
 
@@ -63,7 +62,6 @@ public class Calculator {
         initializeContinue();
 
     }
-
 
     private static void calculateTaxBracket(double weeklyIncomeAfterTaxes){
         for (TaxBracket taxBracket : TAX_BRACKETS){
@@ -90,7 +88,7 @@ public class Calculator {
         return taxBracket.getMinWage() - 1;
     }
 
-
+    //Calculates earnings based on desired user weekly income after taxes
     private static void calcWeeklyEarnings(double weeklyIncomeAfterTaxes){
         projectedEarnings = weeklyIncomeAfterTaxes;
 

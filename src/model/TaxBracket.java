@@ -67,6 +67,7 @@ public class TaxBracket {
         this.maxDeduction = maxDeduction;
     }
 
+    //TaxBrackets for the 2022 calendar year
     public static final TaxBracket TAX_BRACKET_10 = new TaxBracket(10, 1, 10275);
     public static final TaxBracket TAX_BRACKET_12 = new TaxBracket(12, 10276, 41775);
     public static final TaxBracket TAX_BRACKET_22 = new TaxBracket(22, 41776, 89075);
@@ -75,17 +76,5 @@ public class TaxBracket {
     public static final TaxBracket TAX_BRACKET_35 = new TaxBracket(35, 215951, 539900);
     public static final TaxBracket TAX_BRACKET_37 = new TaxBracket(37, 539901, Integer.MAX_VALUE);
     public static final TaxBracket[] TAX_BRACKETS = new TaxBracket[]{TAX_BRACKET_10, TAX_BRACKET_12, TAX_BRACKET_22, TAX_BRACKET_24, TAX_BRACKET_32, TAX_BRACKET_35, TAX_BRACKET_37};
-
-    public static void printInfo(TaxBracket[] taxBracketArray){
-        for(TaxBracket t : taxBracketArray){
-            System.out.println(t.getMaxDeduction());
-        }
-    }
-
-    public static void calcMaxDeduction(TaxBracket[] taxBracketArray) {
-        for(TaxBracket t : taxBracketArray){
-            System.out.println(t.getMaxDeduction());
-        }
-    }
 
 }
